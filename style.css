@@ -1,0 +1,323 @@
+/* globalne */
+body{
+    margin:0;
+}
+
+/* Zmienne */
+:root{
+    --dark:black;
+    --light:white;
+    --blue1:#006DC5;
+    --blue2:#007FBF;
+    --blue3:#008FA7;
+    --green1:#39AE23;
+    --green2:#00A757;
+    --green3:#009C83;
+}
+
+/* Ikony */
+.icon-menu{
+    color: white;
+}
+
+
+/* profilowe */
+
+.bg{
+    background-image:linear-gradient(#3b3b3b67,#000000ca), url(img/bg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width:100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.profilowe{
+    margin-top: 60%;
+    width:196px;
+    height: 196px;
+    border-radius: 50%;
+}
+.bg figcaption{
+    width: 100%;
+}
+    .name{
+    font-size: 38px;
+    color:rgba(255, 255, 255, 0.85);
+    width:100%;
+    text-align: center;
+    margin-top: 17px;
+    margin-bottom: 7px;
+    }
+    .proffesion{
+    color:rgba(255, 255, 255, 0.85);
+    font-size:12px;
+    width:100%;
+    text-align: center;
+    margin-bottom: 14px;
+    }
+.portals{
+    width: 100%;
+    text-align: center;
+    transform: translateY(17px);
+    float:inline-end;
+}
+.portals [class*='icon']{
+    padding: 3px;
+    font-size: 28px;
+    background-color: var(--green3);
+    border-radius: 50%;
+}
+
+/* Skills */
+
+.ProfSkills{
+    justify-content: center;
+}
+
+[class *=col]{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.ProfSkills h2{
+    width: 100%;
+    letter-spacing: 1px;
+    font-size: 16px;
+    font-weight: 700;
+    font-weight: 400px;
+    margin-top: 24px;
+    margin-bottom:14px;
+}
+.progressBar{
+    width:100%;
+    height: 10px;
+    border-radius: 5px;
+    background-color: rgb(148, 148, 148);
+}
+.progressBar div{
+    height:10px;
+    border-radius:5px;
+    float: left;
+}
+
+.progressBar div span{
+    height: 40px;
+    width: 40px;
+    border-radius:50%;
+    transform: translateY(-15px) translateX(20px);
+    float:right;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.html{
+    width: 89%;
+    animation: html 1s linear both;
+    background-color: #e96228;
+}
+.html span{
+    border: 3px solid #e96228;
+    color:white;
+    font-weight: 400;
+    font-size: 14px;
+    background-color:var(--dark);
+}
+.css{
+    width: 86%;
+    animation: css 1s linear both;
+    background-color: #2465f1;
+} 
+.css span{
+    border: 3px solid #2465f1;
+    color:white;
+    font-weight: 400;
+    font-size: 14px;
+    background-color:var(--dark);
+}
+.js{
+    width: 62%;
+    animation: js 1s linear both;
+    background-color: #efd81d;
+}
+.js span{
+    border: 3px solid #efd81d;
+    color:white;
+    font-weight: 400;
+    font-size: 14px;
+    background-color:var(--dark);
+}
+.bs{
+    width: 43%;
+    animation: bs 1s linear both;
+    background-color:#6e12ef;
+}
+.bs span{
+    border: 3px solid #6e12ef;
+    color:white;
+    font-weight: 400;
+    font-size: 14px;
+    background-color:var(--dark);
+}
+.angular{
+    width: 24%;
+    animation: angular 1s both;
+    background-color: #de002d;
+}
+.angular span{
+    border: 3px solid #de002d;
+    color:white;
+    font-weight: 400;
+    font-size: 14px;
+    background-color:var(--dark);
+}
+.react{
+    width:34;
+    animation: react 1s linear both;
+    background-color: #04ccfd;
+}
+.react span{
+    border: 3px solid  #04ccfd;
+    color:white;
+    font-weight: 400;
+    font-size: 14px;
+    background-color:var(--dark);
+}
+
+/* Work */
+
+.picture{
+    display: flex;
+    flex-wrap: wrap;
+    float: left;
+}
+.circle{
+    width: 100%;
+}
+.circleIn{
+    background-color: var(--light);
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;
+}
+.circleOut{
+    background-color: var(--blue1);
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.line{
+    content: "";
+    height: 150px;
+    width:1px;
+    background-color: var(--dark);
+    margin: 2px 12px;
+}
+.heading{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: end;
+}
+.work{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* Kontakt */
+
+form{
+    width: 50%;
+    float: left;
+
+
+}
+form>*{
+    width: 100%;
+    margin: 5px 0%;
+}   
+
+/* footer */
+
+.footer{
+    width:100%;
+    display:flex;
+    flex-wrap:wrap;
+}
+.contact{
+    width: 100%;
+    text-align: center;
+    font-size: 35px;
+    margin-bottom: 16px;
+}
+.autor{
+    width: 100%;
+    text-align: center;
+    font-size: 26px;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+.copywright{
+    width: 100%;
+    text-align: center;
+    font-size: 12px;
+    margin-bottom: 30px;
+}
+
+
+
+/* animacje */
+
+@keyframes html {
+    0%{
+        width:0;
+    }
+    100%{
+        width: 89%;
+    }
+}
+@keyframes css {
+    0%{
+        width:0;
+    }
+    100%{
+        width: 86%;
+    }
+}
+@keyframes js {
+    0%{
+        width:0;
+    }
+    100%{
+        width: 62%;
+    }
+}
+@keyframes bs {
+    0%{
+        width:0;
+    }
+    100%{
+        width: 43%;
+    }
+}
+@keyframes angular {
+    0%{
+        width:0;
+    }
+    100%{
+        width: 24%;
+    }
+}
+@keyframes react {
+    0%{
+        width:0;
+    }
+    100%{
+        width: 34%;
+    }
+}
